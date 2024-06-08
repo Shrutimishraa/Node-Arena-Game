@@ -1,0 +1,14 @@
+{
+  "name": "magical-arena-game",
+  "version": "1.0.0",
+  "description": "A simple turn-based battle simulation game with players battling in an arena using dice rolls.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shruti Mishra",
+  "license": "ISC"
+}
