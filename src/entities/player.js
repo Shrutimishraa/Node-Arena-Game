@@ -1,3 +1,4 @@
+// Define the Player class representing a player in the game
 class Player {
     constructor( name, health, strength, attack ){
         this.name = name;
@@ -6,6 +7,7 @@ class Player {
         this.attack = attack;
 
     }
+    // Check if the player is still alive
     isAlive(){
         return this.health > 0;
     }
