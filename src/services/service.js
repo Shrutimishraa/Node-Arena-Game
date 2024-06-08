@@ -25,9 +25,9 @@ class PlayGround {
     }
     performAttack(attackRoll, defendRoll, attacker, defender){
         const attackDamage = attacker.attack * attackRoll;
-        const defendValue = defender.stength * defendRoll;
-        const damageToDefender = Math.max (0,attackDamage - defendValue);
-        defender.health = defender.health - damageToDefender;
+        const defendValue = defender.strength * defendRoll;
+        const damageToDefender = Math.max (0, attackDamage - defendValue);
+        defender.health -= damageToDefender;
         console.log(`${attacker.name} attacks (dice: ${attackRoll}) with ${attackDamage} damage`);
         console.log(`${defender.name} defends (dice: ${defendRoll}) with ${defendValue} defense`);
         console.log(`${defender.name} takes ${damageToDefender} damage, ${defender.name} health is now ${defender.health}`);
